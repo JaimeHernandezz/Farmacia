@@ -1,0 +1,25 @@
+﻿<Window x:Class="MiPoyectoMiQueridoEnfermito.MiQueridoEnfermito"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiPoyectoMiQueridoEnfermito"
+        mc:Ignorable="d"
+        Title="MiQueridoEnfermito" Height="350" Width="430">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label FontSize="36" HorizontalAlignment="Center" Grid.Row="0">MI QUERIDO ENFERMITO</Label>
+        <WrapPanel Grid.Row="2" Margin="58,0,-58,0">
+            <Button Width="100" x:Name="btnAgregar" Click="btnAgregar_Click" FontSize="20" >Agregar</Button>
+            <Button Width="100" x:Name="btnVentas" Click="btnVentas_Click" FontSize="20" >Ventas</Button>
+            <Button Width="100" x:Name="btnSalir" Click="btnSalir_Click" FontSize="20" >Salir</Button>
+
+        </WrapPanel>
+        <Image x:Name="Dr__Simi_png" Margin="0,5,10,10" Source="Dr._Simi.png" Stretch="Fill" Grid.Row="3"/>
+    </Grid>
+</Window>
